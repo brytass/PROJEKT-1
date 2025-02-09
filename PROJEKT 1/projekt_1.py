@@ -4,6 +4,7 @@ projekt_1.py: první projekt do Engeto Online Python Akademie
 author: Radek Marval
 email: marvalradek@seznam.cz
 """
+# vtupní text
 
 TEXTS = ['''
 Situated about 10 miles west of Kemmerer,
@@ -33,6 +34,8 @@ in modern oceans. Other fish such as paddlefish,
 garpike and stingray are also present.'''
 ]
 
+# přihlašovací údaje
+
 users = {
     "bob": "123",
     "ann": "pass123", 
@@ -41,6 +44,8 @@ users = {
 }
 
 line = ("-" * 40)
+
+# přihlášení uživatele
 
 username = input("Enter username: ")
 password = input("Enter password: ")
@@ -55,6 +60,8 @@ else:
     print(line)
     exit()
 
+# výběr textu 1-3
+
 print("We have 3 texts to be analyzed.")
 print(line)
 text_selection = input("Enter a number btw. 1 and 3 to select: ")
@@ -66,6 +73,8 @@ uppercase_words = 0
 lowercase_words = 0
 numeric_words = 0
 sum_numbers = 0
+
+# statistiky vybraného textu
 
 if text_selection.isdigit():
     if int(text_selection) in (1,2,3):
